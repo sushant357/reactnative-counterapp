@@ -40,6 +40,6 @@ jobs:
           echo "Jest LCOV report generated successfully"
 
       - name: SonarQube Cloud Analysis
-        uses: SonarSource/sonarqube-scan-action@v8.3.0
+        uses: SonarSource/sonarqube-scan-action@d209202e3a? # v8.3.0
         env:
-          SONAR_TOKEN: ${{ ca9c02dcc0c307548779f8dde38aadb6dc352d03 }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
